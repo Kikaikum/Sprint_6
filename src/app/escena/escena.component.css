@@ -1,0 +1,11 @@
+.frases{
+    text-align: center;
+    border: black 2px solid;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.activa{
+    background-color: blueviolet;
+}

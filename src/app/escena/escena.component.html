@@ -1,1 +1,6 @@
-<p>El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial</p>
+<button (click)="decrement()">Anterior</button>
+<button (click)="increment()">Seguent</button>
+
+<div class="frases" *ngFor="let item of frases" [ngClass]="{'activa': item.valor}">
+    <p>{{item.frase}}</p>
+</div>
