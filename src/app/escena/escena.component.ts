@@ -7,8 +7,7 @@ import { Component,Input, OnInit } from '@angular/core';
 })
 export class EscenaComponent implements OnInit {
   @Input("frases")
-  
-  
+   
   frases:{
     frase: string,
     valor: boolean
@@ -16,14 +15,14 @@ export class EscenaComponent implements OnInit {
   
   currentSentence=0;
   
-  increment(){
+  next(){
     if(this.currentSentence<3){
       this.frases[this.currentSentence].valor=false;
       this.currentSentence ++;
       this.frases[this.currentSentence].valor=true;
     }
   }
-  decrement(){
+  prev(){
     if(this.currentSentence>0){
       this.frases[this.currentSentence].valor=false;
       this.currentSentence--;

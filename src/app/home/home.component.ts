@@ -9,7 +9,11 @@ import frases from '../frases.json';
 })
 export class HomeComponent implements OnInit {
   frases=frases.frases;
-
+  emepzarVar=false;
+  
+  emepzar(){
+    this.emepzarVar=true;
+  }
   constructor() { }
   
   ngOnInit(): void {
