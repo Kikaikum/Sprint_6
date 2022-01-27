@@ -1,6 +1,11 @@
-<p *ngIf="!emepzarVar"> desenvolupem un tutorial, en la qual mitjançant dos botons els nous 
-    usuaris puguin avançar i retrocedir en els consells, modificant-se 
-    el text d'ajuda i la imatge de fons.</p>
-    <br>
-<button *ngIf="!emepzarVar" (click)="emepzar()">Empezar</button>
+<div class="container">
+
+    <p *ngIf="!emepzarVar"> desenvolupem un tutorial, en la qual mitjançant dos botons els nous 
+        usuaris puguin avançar i retrocedir en els consells, modificant-se 
+        el text d'ajuda i la imatge de fons.</p>
+        <br>
+    <button *ngIf="!emepzarVar" (click)="emepzar()">Empezar</button>
+
+</div>
+
 <app-escena *ngIf="emepzarVar" [frases]="frases" ></app-escena>
