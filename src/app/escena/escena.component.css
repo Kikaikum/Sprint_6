@@ -13,3 +13,7 @@ button{
 .activa{
     background-color: blueviolet;
 }
+.todo{
+    width: 100%;
+    height: 100vh;
+}

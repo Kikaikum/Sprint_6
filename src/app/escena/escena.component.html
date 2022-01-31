@@ -1,6 +1,10 @@
+
+
 <button (click)="prev()">Anterior</button>
 <button (click)="next()">Seguent</button>
 
-<div class="frases" *ngFor="let item of frases" [ngClass]="{'activa': item.valor}">
-    <p>{{item.frase}}</p>
-</div>
+
+    <div class="frases" *ngFor="let item of frases" [ngClass]="{'activa': item.valor}">
+        <p>{{item.frase}}</p>
+    </div>
+

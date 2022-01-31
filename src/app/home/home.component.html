@@ -1,3 +1,5 @@
+
+
 <div class="container">
 
     <p *ngIf="!emepzarVar"> desenvolupem un tutorial, en la qual mitjançant dos botons els nous 
@@ -7,5 +9,10 @@
     <button *ngIf="!emepzarVar" (click)="emepzar()">Empezar</button>
 
 </div>
+    
+    <app-escena (messageEvent)="receiveMessage($event)" *ngIf="emepzarVar" [frases]="frases" ></app-escena>
+    <p>{{src}}</p>
 
-<app-escena *ngIf="emepzarVar" [frases]="frases" ></app-escena>
+
+
+

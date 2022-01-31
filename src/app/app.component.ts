@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sprint_6';
+  src:string="/assets/img/1.jpg";
+  receiveSrc($event:string) {
+    this.src = $event
+    
+  }
 }

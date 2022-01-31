@@ -1,2 +1,8 @@
-<app-home></app-home>
+
+<div class="todo" [style.background-image]="'url('+src+')'">
+    <app-home (srcEvent)="receiveSrc($event)"></app-home>
+</div>
+    
+
+
 
